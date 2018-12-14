@@ -1,21 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/btnAgenda"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="66dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244"
+        app:layout_editor_absoluteX="@android:dimen/app_icon_size"
+        app:srcCompat="@drawable/agenda" />
 
+    <ImageButton
+        android:id="@+id/btnPedidos"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="66dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831"
+        app:layout_editor_absoluteX="@android:dimen/app_icon_size"
+        app:srcCompat="@drawable/pedido" />
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <ImageButton
+        android:id="@+id/btnContacto"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="66dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831"
+        app:layout_editor_absoluteX="@android:dimen/app_icon_size"
+        app:srcCompat="@drawable/contacto" />
 
-
-
-</android.support.design.widget.CoordinatorLayout>
+    <ImageButton
+        android:id="@+id/btnCatalogo"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="66dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244"
+        app:layout_editor_absoluteX="@android:dimen/app_icon_size"
+        app:srcCompat="@drawable/catalogo" />
+</android.support.constraint.ConstraintLayout>
